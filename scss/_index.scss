@@ -37,5 +37,33 @@ nav li a {
 
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.precio {
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 32%;
+    color: #ffffff;
+    background-color: #08060b;
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    height: max-content;
+}
 
 
