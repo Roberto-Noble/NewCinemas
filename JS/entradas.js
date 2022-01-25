@@ -1,34 +1,13 @@
-function entradasCine() {
+let boton = document.getElementById("buttonc");
+boton.onclick = () => {
+    let ele1 = document.getElementById("pelicula");
+    let precio1 = parseInt(ele1.options[ele1.selectedIndex].value);
+    let ele2 = document.getElementById("tipo");
+    let precio2 = parseInt(ele2.options[ele2.selectedIndex].value);
+    let ele3 = document.getElementById("cantidad");
+    let precio3 = parseInt(ele3.options[ele3.selectedIndex].value);
+    let suma = `Total $ ${precio1 + precio2 * precio3}`;
+    document.getElementById("resultado").value = suma;
+};
 
-class Entradas {
-    constructor(producto, precio, cantidad) {
-        this.producto = producto;
-        this.precio = precio;
-        this.cantidad = cantidad;
-    }
-}
-const arrayEntradas = [];
-let pregunta = prompt("¿desea comprar una entrada? (s/n) ");
 
-while (pregunta === "s") {
-    let producto = prompt("ingrese el  producto que desea comprar : Spiderman: No Way Home : 2D: $300 3D: $350 4D: $450, los mismos precios para Sing 2 y para The Matrix Ressurrections ");
-    let precio = prompt("ingrese el precio de la entrada elegida");
-    let cantidad = prompt("ingrese cuantos quiere ");
-    let entradaIngresada = new Entradas(producto, precio, cantidad);
-    arrayEntradas.push(entradaIngresada);
-    console.log(arrayEntradas);
-    pregunta = prompt("¿desea comprar otra entrada? (s/n) ");
-}
-
-let totalCompra = 0;
-
-for (i = 0; i < arrayEntradas.length; i++) {
-    console.log(arrayEntradas[i]);
-    totalCompra =
-        totalCompra + arrayEntradas[i].precio * arrayEntradas[i].cantidad;
-}
-alert("gracias por su compra! el monto a abonar es de $  " + totalCompra);
-
-}
-
-//--Ésta función de Javascript se activa al dar click sobre el botón de comprar entradas en el HTML//--
