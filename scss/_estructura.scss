@@ -11,7 +11,76 @@ img {
 
 }
 
-$colorFondo: #b0e7e7;
+/*Asientos CSS*/
+
+.grillas {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . . . . . Pantalla Pantalla Pantalla Pantalla Pantalla . . . . ."
+    ". . . . . . . . . . . . . . . ."
+    ". . . . . L1 . L2 . L3 . L4 . . . ."
+    ". . . . . . L5 . L6 . L7 . . . . ."
+    "Entrada2 . . . . L11 . L8 . L9 . L10 . . . Entrada"
+    ". . . . . . L12 . L13 . L14 . . . . ."
+    ". . . . L15 L16 . L17 L18 . L19 L20 . . . .";
+    border: solid 5px red;
+    height: 500px;
+}
+
+.Pantalla { grid-area: Pantalla; border: 1px #9c59a6 solid; }
+
+.L1 { grid-area: L1; border: 1px #9c59a6 solid }
+
+.L2 { grid-area: L2;  border: 1px #9c59a6 solid}
+
+.L3 { grid-area: L3; border: 1px #9c59a6 solid }
+
+.L4 { grid-area: L4; border: 1px #9c59a6 solid }
+
+.L5 { grid-area: L5; border: 1px #9c59a6 solid }
+
+.L6 { grid-area: L6; border: 1px #9c59a6 solid }
+
+.L7 { grid-area: L7; border: 1px #9c59a6 solid }
+
+.L8 { grid-area: L8; border: 1px #9c59a6 solid }
+
+.L9 { grid-area: L9; border: 1px #9c59a6 solid }
+
+.L10 { grid-area: L10; border: 1px #9c59a6 solid }
+
+.L11 { grid-area: L11; border: 1px #9c59a6 solid }
+
+.L12 { grid-area: L12; border: 1px #9c59a6 solid }
+
+.L13 { grid-area: L13; border: 1px #9c59a6 solid }
+
+.L14 { grid-area: L14; border: 1px #9c59a6 solid }
+
+.L15 { grid-area: L15; border: 1px #9c59a6 solid }
+
+.L16 { grid-area: L16; border: 1px #9c59a6 solid}
+
+.L17 { grid-area: L17; border: 1px #9c59a6 solid }
+
+.L18 { grid-area: L18; border: 1px #9c59a6 solid }
+
+.L19 { grid-area: L19; border: 1px #9c59a6 solid }
+
+.L20 { grid-area: L20; border: 1px #9c59a6 solid }
+
+.Entrada { grid-area: Entrada; border: 2px #422946 solid }
+
+.Entrada2 { grid-area: Entrada2; border: 2px #422946 solid }
+
+
+
+
+
 
 /*--MODIFICACIONES BOOTSTRAP--*/
 
